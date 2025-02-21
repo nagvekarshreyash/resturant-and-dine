@@ -45,7 +45,7 @@ export function GallerySection() {
   ];
 
   return (
-    <section ref={ref} className="py-6" id="gallery"> 
+    <section ref={ref} className="py-6 lg:pl-8" id="gallery"> 
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}

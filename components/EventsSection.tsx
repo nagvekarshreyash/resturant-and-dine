@@ -30,7 +30,7 @@ export function EventsSection() {
   ];
 
   return (
-    <section ref={ref} className="py-10 bg-gray-50" id="events">
+    <section ref={ref} className="py-10 bg-gray-50 lg:pl-8" id="events">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}

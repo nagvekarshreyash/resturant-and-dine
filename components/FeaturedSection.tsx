@@ -30,7 +30,7 @@ export function FeaturedSection() {
   ];
 
   return (
-    <section ref={ref} className="py-12 bg-gray-50" id="featured">
+    <section ref={ref} className="py-12 bg-gray-50 lg:pl-8" id="featured">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
