@@ -6,8 +6,8 @@ import { WhatsAppButton } from '@/components/WhatsAppButton';
 const playfair = Playfair_Display({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Padaria Prazeres - Craft. Comfort. Community.',
-  description: 'A slice of Europe on the sandy shores of Goa',
+  title: 'Miri - Global Fusion Dining',
+  description: 'A unique innovative culinary experience in your neighborhood',
 };
 
 export default function RootLayout({

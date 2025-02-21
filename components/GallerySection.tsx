@@ -41,11 +41,12 @@ export function GallerySection() {
       alt: "Pastries",
       className: "col-span-1 row-span-1",
     },
+    
   ];
 
   return (
-    <section ref={ref} className="py-6">
-      <motion.div
+    <section ref={ref} className="py-6" id="gallery"> 
+      <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}

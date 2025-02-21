@@ -19,17 +19,17 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
-        className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-6"
+        className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-4"
       >
         <div className="flex-1">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#39426A] mb-6">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif text-[#39426A] mb-4">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.8 }}
               className="block"
             >
-              Craft.
+              Savor.
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export function HeroSection() {
               transition={{ delay: 0.4, duration: 0.8 }}
               className="block"
             >
-              Comfort.
+              Gather.
             </motion.span>
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="block"
             >
-              Community.
+              Indulge.
             </motion.span>
           </h1>
         </div>
@@ -57,7 +57,7 @@ export function HeroSection() {
             className="relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              src="https://media.istockphoto.com/id/1316145932/photo/table-top-view-of-spicy-food.jpg?s=612x612&w=0&k=20&c=eaKRSIAoRGHMibSfahMyQS6iFADyVy1pnPdy1O5rZ98="
               alt="Pastry"
               width={600}
               height={600}

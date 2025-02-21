@@ -26,7 +26,7 @@ export function ProductsSection() {
   ];
 
   return (
-    <section ref={ref} className="py-6">
+    <section ref={ref} className="py-6" id="products">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}

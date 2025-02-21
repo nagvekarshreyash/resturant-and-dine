@@ -7,15 +7,14 @@ import { Facebook, Instagram, Menu, X } from "lucide-react";
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const menuItems: string[] = [
-    "Home",
-    "About",
-    "Products",
-    "Events",
-    "Gallery",
-    "Featured",
-    "Contact",
-    "Careers",
+  const menuItems: { name: string; id: string }[] = [
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Products", id: "products" },
+    { name: "Events", id: "events" },
+    { name: "Gallery", id: "gallery" },
+    { name: "Featured", id: "featured" },
+    { name: "Contact", id: "contact" },
   ];
 
   const menuVariants = {
@@ -103,7 +102,7 @@ export function Navigation() {
                 animate="open"
                 exit="closed"
                 variants={menuVariants}
-                className="fixed top-0 right-0 h-full w-80 bg-white/95 backdrop-blur-lg z-50 p-8 shadow-xl"
+                className="fixed top-0 right-0 h-screen w-96 bg-white/95 backdrop-blur-lg z-50 p-8 shadow-xl overflow-y-auto"
               >
                 <button
                   onClick={() => setIsMenuOpen(false)}
@@ -118,17 +117,17 @@ export function Navigation() {
                   >
                     {menuItems.map((item) => (
                       <motion.li
-                        key={item}
+                        key={item.id}
                         variants={itemVariants}
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                       >
                         <a
-                          href={`#${item.toLowerCase()}`}
+                          href={`#${item.id}`}
                           onClick={() => setIsMenuOpen(false)}
                           className="block py-2"
                         >
-                          {item}
+                          {item.name}
                         </a>
                       </motion.li>
                     ))}

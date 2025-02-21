@@ -12,25 +12,25 @@ export function FeaturedSection() {
 
   const features = [
     {
-      logo: "/gq-logo.png",
+      logo: "/images/hui-1.webp",
       alt: "GQ Logo",
     },
     {
-      logo: "/traveldine-logo.png",
+      logo: "/images/hui-4.webp",
       alt: "Traveldine Logo",
     },
     {
-      logo: "/vogue-logo.png",
+      logo: "/images/pp-3.webp",
       alt: "Vogue Logo",
     },
     {
-      logo: "/traveller-logo.png",
+      logo: "/images/pp-5.webp",
       alt: "Condé Nast Traveller Logo",
     },
   ];
 
   return (
-    <section ref={ref} className="py-6 bg-gray-50">
+    <section ref={ref} className="py-12 bg-gray-50" id="featured">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
