@@ -30,15 +30,15 @@ export function FeaturedSection() {
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section ref={ref} className="py-6 bg-gray-50">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-5xl font-serif text-[#39426A] mb-12">FEATURED</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
+        <h2 className="text-4xl md:text-5xl font-serif text-[#39426A] mb-12">FEATURED</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           {features.map((feature, index) => (
             <motion.div
               key={index}

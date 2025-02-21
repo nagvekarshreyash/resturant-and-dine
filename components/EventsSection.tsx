@@ -30,7 +30,7 @@ export function EventsSection() {
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section ref={ref} className="py-10 bg-gray-50">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -55,7 +55,7 @@ export function EventsSection() {
               transition={{ delay: index * 0.2, duration: 0.8 }}
               className="bg-white rounded-lg overflow-hidden shadow-lg"
             >
-              <div className="relative h-48">
+              <div className="relative h-48 md:h-64">
                 <Image
                   src={event.image}
                   alt={event.title}

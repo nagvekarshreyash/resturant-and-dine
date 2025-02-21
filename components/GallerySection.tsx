@@ -44,15 +44,15 @@ export function GallerySection() {
   ];
 
   return (
-    <section ref={ref} className="py-20">
+    <section ref={ref} className="py-6">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-5xl font-serif text-[#39426A] mb-12">GALLERY</h2>
-        <div className="grid grid-cols-4 gap-4 auto-rows-[200px]">
+        <h2 className="text-4xl md:text-5xl font-serif text-[#39426A] mb-12">GALLERY</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
           {images.map((image, index) => (
             <motion.div
               key={index}

@@ -19,10 +19,10 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
-        className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12"
+        className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-6"
       >
         <div className="flex-1">
-          <h1 className="text-6xl lg:text-7xl font-serif text-[#39426A] mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif text-[#39426A] mb-6">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -57,7 +57,7 @@ export function HeroSection() {
             className="relative"
           >
             <Image
-              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
               alt="Pastry"
               width={600}
               height={600}

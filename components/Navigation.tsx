@@ -52,11 +52,11 @@ export function Navigation() {
     <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Image
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Padaria Prazeres"
-          width={150}
-          height={50}
-          className="h-12 w-auto"
+          width={300}
+          height={300}
+          className="h-24 w-auto"
         />
         <div className="flex items-center gap-6">
           <a

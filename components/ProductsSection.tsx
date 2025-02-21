@@ -26,15 +26,15 @@ export function ProductsSection() {
   ];
 
   return (
-    <section ref={ref} className="py-20">
+    <section ref={ref} className="py-6">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-5xl font-serif text-[#39426A] mb-12">PRODUCTS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-4xl md:text-5xl font-serif text-[#39426A] mb-12">PRODUCTS</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product, index) => (
             <motion.div
               key={index}
@@ -48,16 +48,16 @@ export function ProductsSection() {
                 alt={product.title}
                 width={400}
                 height={400}
-                className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="text-white text-2xl font-serif">{product.title}</h3>
+                <h3 className="text-white text-xl font-serif">{product.title}</h3>
               </div>
             </motion.div>
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <button className="bg-[#39426A] text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-[#2a2f4c] transition-colors">
+        <div className="mt-6 text-center">
+          <button className="bg-[#39426A] text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-[#2a2f4c] transition-colors">
             MENU HERE
           </button>
         </div>
